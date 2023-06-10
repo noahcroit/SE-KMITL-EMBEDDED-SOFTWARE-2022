@@ -1,0 +1,16 @@
+This exercises want you to practice creating the micropython application by using "RR + Timer Scheduling" 
+and "Function-Queue Scheduling" technique.
+ 
+The application is composed of these tasks :
+- Task 1 : Blinking onboard LED (Green) for every 1 second
+- Task 2 : Toggle LED module (Red) whenever the KEY is pressed
+- Task 3 : Control the brightness of RGB_LED module (Set to the Blue color) with VOL_ADJ module for every 20 msec 
+- Task 4 : Display brightness of RGB_LED on OLED module for every 3 second
+
+
+
+LAB1. Write the application from above with "RR + Timer Scheduling" technique. You are allowed to use only 1 Timer from machine.Timer() module as systick of your system. Timer interrupt can be used.
+Hint : Scheduler is on the superloop, It decides when to run each tasks by checking the systick 
+
+LAB2. Write the application as the same as in LAB1, but use "Function Queue" technique instead. Use heapq module to create function's queue. There is no limits to the number of the hardware interrupt routine for all tasks. 
+
